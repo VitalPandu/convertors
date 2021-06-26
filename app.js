@@ -22,10 +22,10 @@ function fahrenheitToCelsius(unit){
 	if(unit=="f"){
 		
 		var fahrenheit= document.getElementById('Fahrenheit').value;
-		document.getElementById('Celsius').value =	Math.round(fahrenheit-32*5/9);
+		document.getElementById('Celsius').value =	Math.round((fahrenheit-32)*5/9);
 	}else {
 		var celsius= document.getElementById('Celsius').value;
-		document.getElementById('Fahrenheit').value = Math.round(celsius*9/5+32);
+		document.getElementById('Fahrenheit').value = Math.round((celsius*9)/5+32);
 	}
 
 }
